@@ -1,0 +1,12 @@
+{
+	"server": {
+		"host": "127.0.0.1",
+		"post": "8080"
+	},
+
+	"persistence": {
+		"host": "mongodb://localhost",
+		"port": 27017,
+		"db": "test"
+	}
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ex-api",
+  "version": "0.0.1",
+  "description": "api server",
+  "main": "index.js",
+  "scripts": {
+    "server-dev": "nodemon --inspect .",
+    "server-dev-prod": "nodemon .",
+    "server-prod": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenotalora/ex-api.git"
+  },
+  "keywords": [
+    "api",
+    "boilerplate"
+  ],
+  "author": "Jonathan S. Otalora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenotalora/ex-api/issues"
+  },
+  "homepage": "https://github.com/stephenotalora/ex-api#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.11",
+    "node-utils": "git@github.com:stephenotalora/node-utils.git#ba740cf96d7f1dc5c548bdc163aa37e937cbff2f"
+  }
+}

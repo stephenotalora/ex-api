@@ -1,7 +1,7 @@
 {
 	"server": {
 		"host": "127.0.0.1",
-		"post": "8080"
+		"post": 8080
 	},
 
 	"persistence": {

@@ -1,2 +1,2 @@
-const {loadConfig} = require('node-utils')();
-const config = loadConfig();
+// const middleware = require('./src/middleware');
+// const exports = module.exports = require('express')();

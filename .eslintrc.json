@@ -1,0 +1,9 @@
+{
+    "extends": "eslint-config-cumul8",
+    "plugins": [
+      "cumul8"
+    ],
+    "rules": {
+      "import/no-commonjs": 0
+    }
+}

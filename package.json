@@ -24,13 +24,18 @@
   },
   "homepage": "https://github.com/stephenotalora/ex-api#readme",
   "dependencies": {
+    "async": "^2.1.2",
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongodb": "^2.2.11",
-    "node-utils": "git@github.com:stephenotalora/node-utils.git#ba740cf96d7f1dc5c548bdc163aa37e937cbff2f"
+    "node-utils": "git@github.com:stephenotalora/node-utils.git#4c1b9936fda4b5a50e3782b4dc90df4852625eaf"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-spies": "^0.7.1",
+    "eslint": "^3.10.0",
+    "eslint-config-cumul8": "^4.9.1",
+    "eslint-plugin-cumul8": "^1.4.2",
     "mocha": "^3.1.2"
   }
 }

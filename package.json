@@ -27,5 +27,10 @@
     "express": "^4.14.0",
     "mongodb": "^2.2.11",
     "node-utils": "git@github.com:stephenotalora/node-utils.git#ba740cf96d7f1dc5c548bdc163aa37e937cbff2f"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-spies": "^0.7.1",
+    "mocha": "^3.1.2"
   }
 }

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const app = require('express')();
 const async = require('async');
-const initMiddleware = require('./middleware');
+const initMiddleware = require('./src/middleware');
 // const routes = require('./routes')(app);
 
 module.exports = exports = {};
@@ -25,15 +25,6 @@ const boot = (done) => {
 	.catch(done);
 };
 
-/**
- * shutDown
- * closes the connection to the http server
- */
-const shutDown = () => {
-	const _this = exports;
-	_this.server.close();
-};
-
 
 /**
  * initExports
@@ -46,6 +37,15 @@ const initExports = (done) => {
 	_this.shutDown = shutDown;
 	// _this.routes = routes;
 	done();
+};
+
+/**
+ * shutDown
+ * closes the connection to the http server
+ */
+const shutDown = () => {
+	const _this = exports;
+	_this.server.close();
 };
 
 /**

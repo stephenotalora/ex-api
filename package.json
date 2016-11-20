@@ -36,7 +36,6 @@
     "chai-spies": "^0.7.1",
     "eslint": "^3.10.0",
     "eslint-config-cumul8": "^4.9.1",
-    "eslint-plugin-cumul8": "^1.4.2",
     "mocha": "^3.1.2",
     "superagent": "^2.3.0"
   }

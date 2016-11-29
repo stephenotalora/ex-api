@@ -1,16 +1,23 @@
 const async = require('async');
-const Promise = require('bluebird');
 const bodyParser = require('body-parser');
+const {isDev} = require('node-toolbox');
+const mogan = require('morgan');
+const path = require('path');
+const rootDir = require('app-root-dir');
+const Promise = require('bluebird');
+const seveStatic = require('serve-static');
 
 const _initParsers = (app) => {
 	const {parsers: {urlencoded}} = app.get('settings');
-
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded(urlencoded));
 };
 
 const initMiddleware = (app, callback) => {
 	_initParsers(app);
+
+	app.use(mogan(isDev() ? 'dev' : 'tiny'));
+	app.use(seveStatic(path.join(rootDir.get(), 'public')));
 
 	callback(null);
 };

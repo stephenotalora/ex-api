@@ -24,12 +24,15 @@
   },
   "homepage": "https://github.com/stephenotalora/ex-api#readme",
   "dependencies": {
+    "app-root-dir": "^1.0.2",
     "async": "^2.1.2",
     "bluebird": "^3.4.6",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "mongodb": "^2.2.11",
-    "node-utils": "git@github.com:stephenotalora/node-utils.git#4c1b9936fda4b5a50e3782b4dc90df4852625eaf"
+    "morgan": "^1.7.0",
+    "node-toolbox": "^0.0.1",
+    "serve-static": "^1.11.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
